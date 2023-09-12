@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Font+Name&display=swap"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Portfolio Website</title>
 </head>
 
@@ -20,7 +20,7 @@
                 <p><a href="#">Home</a></p>
                 <p><a href="#about-us">about us</a></p>
                 <p><a href="#project-section">projects</a></p>
-                <p><a href="#">skills</a></p>
+                <p><a href="#skills">skills</a></p>
                 <p><a href="#">contact us</a></p>
             </div>
             <div class="icon">
@@ -63,19 +63,18 @@
             </div>
         </div>
 
-
         <div class="hr-tag">
             <hr>
         </div>
 
-        <!-- ===========================================
-            About Us Section 
-        ================================================-->
+        <!-- =================================================================
+                                    About Us Section 
+        ===================================================================-->
 
-        <div class="about-us">
+        <div class="about-us" data-aos="fade-up">
             <div class="About-background" id="about-us">
                 <div class="About">
-                    <div class="About-Us">
+                    <div class="main-heading">
                         <p>About Us</p>
                     </div>
                     <div class="about-content">
@@ -100,63 +99,63 @@
         <div class="hr-tag">
             <hr>
         </div>
-        
+
         <!-- ==================================================================
                                     Project Section
         ==================================================================  -->
 
-        <section class="project-section" id="project-section">
-            <div class="project-container">
+        <section class="project-section" id="project-section" data-aos="fade-up">
+            <div class="main-heading">
                 <p>My Projects</p>
             </div>
 
             <div class="projects">
                 <div class="Projects-outer">
-                <div class="project-content">
-                    <a href="https://elaborate-capybara-b1bfd3.netlify.app/" target="_blank">
-                    <img src="/images/blogapp.png" alt="">
-                    </a>
-                    <p class="heading">Blog App</p>
-                    <!-- <p class="sub-headings">This is my React.js project, which was created using HTML, CSS, and React.js. In this React.js project, users initially create an account. After successfully creating an account, they gain access to the login feature and can start writing blogs. -->
-                
+                    <div class="project-content">
+                        <a href="https://elaborate-capybara-b1bfd3.netlify.app/" target="_blank">
+                            <img src="/images/blogapp.png" alt="">
+                        </a>
+                        <p class="heading">Blog App</p>
+                        <!-- <p class="sub-headings">This is my React.js project, which was created using HTML, CSS, and React.js. In this React.js project, users initially create an account. After successfully creating an account, they gain access to the login feature and can start writing blogs. -->
+
+                    </div>
+                    <div class="project-content">
+                        <a href="https://order-management-system-zeta.vercel.app/" target="_blank">
+                            <img src="/images/order.png" alt="">
+                        </a>
+                        <p class="heading">Order Managment System</p>
+                        <!-- <p class="sub-headings">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim quis cupiditate odit corrupti quo consequuntur corporis ipsam nihil alias mollitia eos at obcaecati, qui, similique natus? Voluptas cupiditate a sapiente.</p> -->
+                    </div>
+                    <div class="project-content">
+                        <a href="https://abdulbasit219.github.io/CurrencyConverter/" target="_blank">
+                            <img src="/images/currency.png" alt="">
+                        </a>
+                        <p class="heading">Currency Converter</p>
+                        <!-- <p class="sub-headings">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim quis cupiditate odit corrupti quo consequuntur corporis ipsam nihil alias mollitia eos at obcaecati, qui, similique natus? Voluptas cupiditate a sapiente.</p> -->
+                    </div>
+                    <div class="project-content">
+                        <a href="https://abdulbasit219.github.io/GpaCal/" target="_blank">
+                            <img src="/images/GPA.png" alt="">
+                        </a>
+                        <p class="heading">GPA Calculator</p>
+                        <!-- <p class="sub-headings">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim quis cupiditate odit corrupti quo consequuntur corporis ipsam nihil alias mollitia eos at obcaecati, qui, similique natus? Voluptas cupiditate a sapiente.</p> -->
+                    </div>
+                    <div class="project-content">
+                        <a href="https://abdulbasit219.github.io/Taxcalculator/" target="_blank">
+                            <img src="/images/tax.png" alt="">
+                        </a>
+                        <p class="heading">Tax Calculator</p>
+                        <!-- <p class="sub-headings">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim quis cupiditate odit corrupti quo consequuntur corporis ipsam nihil alias mollitia eos at obcaecati, qui, similique natus? Voluptas cupiditate a sapiente.</p> -->
+                    </div>
+                    <div class="project-content">
+                        <a href="https://adorable-yeot-bf36c2.netlify.app/" target="_blank">
+                            <img src="/images/todo.png" alt="">
+                        </a>
+                        <p class="heading">Blog App</p>
+                        <!-- <p class="sub-headings">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim quis cupiditate odit corrupti quo consequuntur corporis ipsam nihil alias mollitia eos at obcaecati, qui, similique natus? Voluptas cupiditate a sapiente.</p> -->
+                    </div>
+
                 </div>
-                <div class="project-content">
-                    <a href="https://order-management-system-zeta.vercel.app/" target="_blank">
-                    <img src="/images/order.png" alt="">
-                    </a>
-                    <p class="heading">Order Managment System</p>
-                    <!-- <p class="sub-headings">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim quis cupiditate odit corrupti quo consequuntur corporis ipsam nihil alias mollitia eos at obcaecati, qui, similique natus? Voluptas cupiditate a sapiente.</p> -->
-                </div>
-                <div class="project-content">
-                    <a href="https://abdulbasit219.github.io/CurrencyConverter/" target="_blank">
-                    <img src="/images/currency.png" alt="">
-                    </a>
-                    <p class="heading">Currency Converter</p>
-                    <!-- <p class="sub-headings">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim quis cupiditate odit corrupti quo consequuntur corporis ipsam nihil alias mollitia eos at obcaecati, qui, similique natus? Voluptas cupiditate a sapiente.</p> -->
-                </div>
-                <div class="project-content">
-                    <a href="https://abdulbasit219.github.io/GpaCal/" target="_blank">
-                    <img src="/images/GPA.png" alt="">
-                    </a>
-                    <p class="heading">GPA Calculator</p>
-                    <!-- <p class="sub-headings">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim quis cupiditate odit corrupti quo consequuntur corporis ipsam nihil alias mollitia eos at obcaecati, qui, similique natus? Voluptas cupiditate a sapiente.</p> -->
-                </div>
-                <div class="project-content">
-                    <a href="https://abdulbasit219.github.io/Taxcalculator/" target="_blank">
-                    <img src="/images/tax.png" alt="">
-                    </a>
-                    <p class="heading">Tax Calculator</p>
-                    <!-- <p class="sub-headings">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim quis cupiditate odit corrupti quo consequuntur corporis ipsam nihil alias mollitia eos at obcaecati, qui, similique natus? Voluptas cupiditate a sapiente.</p> -->
-                </div>
-                <div class="project-content">
-                    <a href="https://adorable-yeot-bf36c2.netlify.app/" target="_blank">
-                    <img src="/images/todo.png" alt="">
-                    </a>
-                    <p class="heading">Blog App</p>
-                    <!-- <p class="sub-headings">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim quis cupiditate odit corrupti quo consequuntur corporis ipsam nihil alias mollitia eos at obcaecati, qui, similique natus? Voluptas cupiditate a sapiente.</p> -->
-                </div>
-                
-            </div>
             </div>
         </section>
 
@@ -164,25 +163,98 @@
             <hr>
         </div>
 
-        <!-- =====================================================
-                            Skills Section
-        ===================================================== -->
-        <section>
-             <div class="skill">
-                <p>my technicall skills</p>
-                <div class="outer">
-                    <div class="inner">
-                        <div id="number">
-                            65%
-                        </div>
+        <!-- ==================================================================
+                                     Skills Section
+        =================================================================== -->
+        <section class="skill-section" data-aos="fade-up" id="skills">
+            <div>
+                <p class="main-heading">Skills</p>
+            </div>
+
+            <div class="timeline">
+
+                <div class="skill-container left">
+                    <i class="fa-brands fa-html5"></i>
+                    <div class="text">
+                        <p>HTML</p>
+                        <span class="left-arrow"></span>
                     </div>
                 </div>
-             </div>
+
+                <div class="skill-container right">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <div class="text">
+                        <p>CSS</p>
+                        <span class="right-arrow"></span>
+                    </div>
+                </div>
+
+                <div class="skill-container left">
+                    <i class="fa-brands fa-js"></i>
+                    <div class="text">
+                        <p>JavaScript</p>
+                        <span class="left-arrow"></span>
+                    </div>
+                </div>
+
+                <div class="skill-container right">
+                    <i class="fa-brands fa-react"></i>
+                    <div class="text">
+                        <p>React Js</p>
+                        <span class="right-arrow"></span>
+                    </div>
+                </div>
+
+            </div>
+
         </section>
+
+        <div class="hr-tag">
+            <hr>
+        </div>
+
+        <!-- ========================================================================
+                                    Contact US
+        ======================================================================== -->
+
+        <section class="contact-section">
+            <div>
+                <p class="main-heading">Contact Me</p>
+            </div>
+
+            <div class="input-container">
+                <div class="name-inp">
+                    <div class="inp-text-first">
+                        <label for="">First Name:</label>
+                        <input type="text" placeholder=" Enter Your First Name" />
+                    </div>
+                    <div class="inp-text-last">
+                        <label for="">Last Name:</label>
+                        <input type="text" placeholder=" Enter Your First Name" />
+                    </div>
+                </div>
+
+                <div class="email-message">
+                    <div class="email">
+                        <label for="">Email</label>
+                        <input type="email" placeholder=" Enter Your Email" />
+                    </div>
+
+                    <div class="message">
+                        <label for="">Message</label>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
     </main>
 
 
-    <!-- Footer -->
+    <!-- ======================================================================
+                                        Footer 
+    ======================================================================= -->
     <footer>
 
     </footer>
@@ -192,8 +264,16 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-            strings: ['Hi all Im Abdul Basit'],
+            strings: ['Hi all Im <span>Abdul Basit</span>'],
             typeSpeed: 50,
+        });
+    </script>
+    <!-- animation library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 1000
         });
     </script>
 
