@@ -28,8 +28,9 @@ html {
 }
 
 /*=========================================
-                Navbar Item 
+                Navbar
  ==========================================*/
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -38,11 +39,12 @@ nav {
     height: 70px;
     align-items: center;
     color: white;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
     position: fixed;
+    top: 0;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
     width: 100%;
+    z-index: 999;
 }
-
 nav div p {
     display: inline-block;
 }
@@ -111,62 +113,6 @@ nav a:hover:before {
     display: none;
 }
 
-/* 
-================================================================
-small Screen
-================================================================ */
-@media screen and (max-width: 800px) {
-    .icon {
-        display: block;
-        z-index: 999;
-        padding: 2px;
-        border-radius: 5px;
-    }
-
-    nav {
-        padding: 10px 30px;
-        position: relative;
-    }
-
-    .nav-items {
-        width: 70%;
-        height: 100vh;
-        background-color: #02011A;
-        position: absolute;
-        left: 30%;
-        top: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        transform: translateX(100%);
-        transition: all 0.5s linear;
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
-        z-index: 999;
-    }
-
-    .active {
-        transform: translateX(0);
-        opacity: 1;
-        visibility: visible;
-        pointer-events: auto;
-    }
-
-    .nav-items p {
-        margin-top: 4rem;
-    }
-
-    .active .mobile-nav-icon[name='close-icon'] {
-        display: block;
-    }
-
-    .active .mobile-nav-icon[name='menu'] {
-        display: none;
-    }
-}
-
 /* hr */
 .hr-tag {
     display: flex;
@@ -174,10 +120,10 @@ small Screen
 }
 
 hr {
-    margin: 5rem 0px;
+    margin: 4rem 0px;
     width: 95%;
     position: relative;
-    top: 20px;
+    /* top: 20px; */
     border: none;
     height: 1px;
     background: #a3fddc;
@@ -186,7 +132,7 @@ hr {
 
 
 /* =================================================
-Main section 
+                    Main section 
 ====================================================*/
 
 .main-container {
@@ -250,7 +196,7 @@ Main section
     border: none;
     outline: none;
     background: transparent;
-    border: 1px solid #a3fddc;
+    border: 2px solid #a3fddc;
     color: #a3fddc;
 }
 
@@ -298,7 +244,7 @@ Main section
 
 
 /*=======================================================
- About Us Section 
+                About Us Section 
  ========================================================*/
 .about-us {
     margin: auto;
@@ -353,7 +299,7 @@ Main section
     border-radius: 100px;
     outline: none;
     background: transparent;
-    border: 1px solid #a3fddc;
+    border: 2px solid #a3fddc;
     color: #a3fddc;
 }
 
@@ -373,7 +319,7 @@ Main section
 }
 
 /*============================================================ 
-Project section 
+                    Project section 
 ==============================================================*/
 
 .project-section {
@@ -444,9 +390,9 @@ Project section
     opacity: 0.4;
 }
 
-/* ====================================
-        Skills section
-==================================== */
+/* =====================================================
+                    Skills section
+===================================================== */
 .skill-section {
     background-color: #0d0d2a;
     width: 95%;
@@ -556,7 +502,7 @@ Project section
 
 /* 
 ====================================================
-contact us
+                    contact us
 ==================================================== */
 
 .contact-section{
@@ -604,8 +550,105 @@ contact us
 .message textarea{
     margin-top: 1rem;
 }
+.submit-btn{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.submit-btn button{
+    background-color: transparent;
+    border-radius: 50px;
+    border: 2px solid #a3fddc;
+    outline: none;
+    color: #fff;
+    padding: 5px 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.submit-btn button:hover{
+    background-color: #a3fddc;
+    color: #000;
+    transform: scale(1.2);
+}
 
-
+/* =====================================================
+                       footer
+==================================================== */
+footer{
+    position: relative;
+    width: 100%;
+    margin-top: 70px;
+    min-height: 150px;
+    background-color: #0d0d2a;
+    /* background-color: #fff; */
+    padding: 20px 0px;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+}
+.icons a i{
+    font-size: 3rem;
+    margin-left: 10px;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+.icons a i:hover{
+    opacity: 0.5;
+    transform: translateY(-10px);
+}
+.list{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    position: relative;
+}
+.list a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    margin-left: 0.8rem;
+    transition: all 0.5s ease;
+}
+.list a:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background-color: #f2f4f4;
+    transition: all 0.5s ease;
+}
+.list a:hover{
+    opacity: 0.5;
+    transform: translateY(-5px);
+}
+.list a:hover:before{
+    width: 100%;
+}
+.copyright{
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+}
+.list::after{
+    content: '';
+    position: absolute;
+    top: 120%;
+    background-color: #fff;
+    width: 32%;
+    height: 2px;
+    opacity: 0.6;
+}
+.waves{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 140px;
+    z-index: -1;
+}
 
 /* =================================================
                     large screen 
@@ -658,7 +701,6 @@ contact us
     }
 }
 
-
 @media screen and (max-width: 700px) {
     .timeline {
         margin: 20px auto;
@@ -702,9 +744,71 @@ contact us
         margin-left: 0;
         margin-top: 2rem;
     }
+    .list a{
+        font-size: 1rem;
+    }
+    .list::after{
+        width: 50%;
+    }
+    .waves{
+        bottom: 60px;
+    }
 }
 
+/* ================================================================
+            small Screen for Navbar
+================================================================ */
+@media screen and (max-width: 800px) {
+    .icon {
+        display: block;
+        z-index: 999;
+        padding: 2px;
+        border-radius: 5px;
+    }
 
+    nav {
+        padding: 10px 30px;
+        position: relative;
+    }
+
+    .nav-items {
+        width: 70%;
+        height: 100vh;
+        background-color: #02011A;
+        position: absolute;
+        left: 30%;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: all 0.5s linear;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        z-index: 999;
+    }
+
+    .active {
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .nav-items p {
+        margin-top: 4rem;
+    }
+
+    .active .mobile-nav-icon[name='close-icon'] {
+        display: block;
+    }
+
+    .active .mobile-nav-icon[name='menu'] {
+        display: none;
+    }
+}
 
 
 

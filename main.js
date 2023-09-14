@@ -1,3 +1,4 @@
+//for Navbar
 const mobile_navbar = document.querySelector('.icon');
 const navbar = document.querySelector('.nav-items');
 const toggle = () => {
@@ -7,6 +8,7 @@ const toggle = () => {
 mobile_navbar.addEventListener('click', () => toggle())
 
 
+// for Download Resume
 const DownloadResume = () => {
     const filePath = 'Abdul Basit resume.pdf';
     const a = document.createElement('a');
