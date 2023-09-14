@@ -247,6 +247,7 @@ hr {
                 About Us Section 
  ========================================================*/
 .about-us {
+    padding: 1rem 0px;
     margin: auto;
     background-color: #0d0d2a;
 }
@@ -749,6 +750,9 @@ footer{
     }
     .list::after{
         width: 50%;
+    }
+    .copyright p{
+        font-size: 1rem;
     }
     .waves{
         bottom: 60px;
