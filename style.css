@@ -57,10 +57,16 @@ nav div p {
     text-shadow: 2px 2px 2px #b2b4b5;
 }
 
+.home-active{
+    color: #a3fddc;
+    border: 2px solid #a3fddc;
+    border-radius: 5px;
+    padding: 3px;
+}
+
 nav div p a {
     list-style: none;
     text-decoration: none;
-    color: black;
     margin-left: 20px;
     font-size: 2rem;
     color: white;
@@ -138,10 +144,11 @@ hr {
 .main-container {
     display: flex;
     flex-direction: column-reverse;
-    width: 100%;
-    padding: 0 8%;
-    height: 90vh;
+    align-items: center;
     justify-content: center;
+    width: 100%;
+    padding: 0px 3%;
+    height: 80vh;
 }
 
 .main-text {
@@ -149,7 +156,7 @@ hr {
     justify-content: center;
     align-items: center;
     color: #fff;
-    margin-top: 15%;
+    margin: auto;
 }
 
 #element {
@@ -175,13 +182,24 @@ hr {
 }
 
 .image {
-    display: flex;
-    justify-content: center;
+    margin: auto;
+    position: relative;
+    max-width: 300px;
     width: 100%;
+    max-height: 300px;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background-color: #a3fddc;
 }
 
-.image img {
+
+.image img{
+    position: absolute;
+    right: 8px;
     width: 100%;
+    border-radius: 0px 0px 134px 157px;
+    top: 23px;
 }
 
 .hero-btn {
@@ -242,7 +260,6 @@ hr {
     color: red;
 }
 
-
 /*=======================================================
                 About Us Section 
  ========================================================*/
@@ -280,7 +297,7 @@ hr {
 }
 
 .about-para {
-    line-height: 1.2;
+    line-height: 1.5;
     /* text-align: center; */
     font-size: 1.5rem;
     color: #fff;
@@ -418,6 +435,7 @@ hr {
     border-radius: 5px;
     font-size: 3rem;
     font-weight: 700;
+    position: relative;
 }
 
 .left {
@@ -486,7 +504,7 @@ hr {
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
     border-left: 15px solid #fff;
-    right: 40px;
+    right: -12px;
 }
 
 .right-arrow {
@@ -498,9 +516,87 @@ hr {
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
     border-right: 15px solid #fff;
-    left: 40px;
+    left: -12px;
 }
-
+.text::after{
+    content: '';
+    width: 90%;
+    height: 6px;
+    position: absolute;
+    background: #2d2c2c;
+    border-radius: 5px;
+}
+.progress-bar .html,.CSS,.JavaScript,.reactjs{
+    position: absolute;
+    height: 6px;
+    border-radius: 5px;
+    z-index: 999;
+    bottom: 14px;
+}
+.html{
+    animation: html 1.2s linear forwards;
+    width: 0;
+    background-color: #DD4B25;
+}
+.html span{
+    border: 2px solid #DD4B25;
+}
+.CSS{
+    animation: css 1.2s linear forwards;
+    width: 0;
+    background: #254BDD;
+}
+.CSS span{
+    border: 2px solid #254BDD;
+}
+.JavaScript{
+    animation: Js 1.2s linear forwards;
+    width: 0%;
+    background-color: #EFD81D;
+}
+.JavaScript span{
+    border: 2px solid #EFD81D;
+}
+.reactjs{
+    animation: reactjs 1.2s linear forwards;
+    width: 0%;
+    background-color: #61D4F3;
+}
+.reactjs span{
+    border: 2px solid #61D4F3;
+}
+.progress-bar span{
+    position: absolute;
+    font-size: 8px;
+    font-weight: 800;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    z-index: 999;
+    padding: 5px 2px;    
+    top: -12px;
+    right: 0;
+}
+@keyframes html{
+    100%{
+        width: 85%;
+    }
+}
+@keyframes css{
+    100%{
+        width: 80%;
+    } 
+}
+@keyframes Js{
+    100%{
+        width: 78%;
+    }
+}
+@keyframes reactjs{
+    100%{
+        width: 75%;
+    }
+}
 /* 
 ====================================================
                     contact us
@@ -579,9 +675,8 @@ footer{
     position: relative;
     width: 100%;
     margin-top: 70px;
-    min-height: 150px;
     background-color: #0d0d2a;
-    /* background-color: #fff; */
+    min-height: 150px;
     padding: 20px 0px;
 }
 .icons{
@@ -647,9 +742,12 @@ footer{
     position: absolute;
     width: 100%;
     height: 100%;
-    bottom: 140px;
+    bottom: 170px;
     z-index: -1;
 }
+
+
+
 
 /* =================================================
                     large screen 
@@ -657,25 +755,11 @@ footer{
 @media screen and (min-width: 768px) {
 
     /* main section */
-    .main-container {
-        display: flex;
+     .main-container {
         flex-direction: row;
         width: 100%;
         height: 100vh;
-        align-items: center;
-    }
-
-    .main-text {
-        width: 40%;
-        margin-top: 8%;
-    }
-
-    .main-text div {
-        width: 100%;
-    }
-
-    .image {
-        width: 60%;
+        padding: 0px 8%;
     }
 
     /* About section */
@@ -729,7 +813,7 @@ footer{
     .left-arrow,
     .right-arrow {
         border-left: 0;
-        left: 70px;
+        left: -12px;
         border-right: 15px solid #fff;
     }
     .left i,
@@ -755,8 +839,8 @@ footer{
         font-size: 1rem;
     }
     .waves{
-        bottom: 60px;
-    }
+        bottom: 75px;
+    }    
 }
 
 /* ================================================================
