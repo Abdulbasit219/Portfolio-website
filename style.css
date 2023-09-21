@@ -191,15 +191,36 @@ hr {
     border-radius: 50%;
     border: 1px solid #fff;
     background-color: #a3fddc;
+    animation: animate 5s 0s infinite linear;
 }
-
 
 .image img{
     position: absolute;
     right: 8px;
     width: 100%;
-    border-radius: 0px 0px 134px 157px;
-    top: 23px;
+    /* border-radius: 0px 0px 134px 157px;
+    top: 23px; */
+    border-radius: 0px 0px 146px 146px;
+    top: 2px;
+    left: 0px;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translateY(10px);
+    }
+    50%{
+        transform: translateY(-5px);
+    }
+    75%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }
 
 .hero-btn {
