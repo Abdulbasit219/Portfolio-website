@@ -1,2 +1,2 @@
 # Portfolio-website
-live url: https://astounding-sprite-a83105.netlify.app/
+live url: https://ab-basit-portfolio.netlify.app/
