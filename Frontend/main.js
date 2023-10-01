@@ -36,7 +36,7 @@ document.getElementById('submit-btn').addEventListener('click', async () => {
                 }
 
     try{
-        const res = await fetch('http://localhost:3000/register', {
+        const res = await fetch('https://portfolio-website-api.vercel.app/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
