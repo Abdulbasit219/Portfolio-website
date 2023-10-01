@@ -3,15 +3,11 @@
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
-    "mongoose": "^7.5.3",
-    "netlify-cli": "^16.4.2",
-    "netlify-lambda": "^2.0.16",
-    "serverless-http": "^3.2.0"
+    "mongoose": "^7.5.3"
   },
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js",
-    "build": "netlify deploy --prod"
+    "dev": "nodemon index.js"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"

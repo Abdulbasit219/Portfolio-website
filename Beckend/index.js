@@ -3,9 +3,14 @@ const app = express();
 const dotenv = require('dotenv');
 const Dbmodel = require('./schema');
 const cors = require('cors');
-const serverless = require('serverless-http');
 
-app.use(cors());
+app.use(cors(
+    {
+        origin: [""],
+        methods: ["Get", "Post"],
+        credentials: true
+      }
+));
 app.use(express.json());
 
 dotenv.config({ path: './config.env' });

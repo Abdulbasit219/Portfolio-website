@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Users\Aazan\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add netlify-lamda
+  C:\Program Files\nodejs\node.exe C:\Users\Aazan\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js dev
 
 PATH: 
   C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk1.8.0_202\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\Aazan\AppData\Local\Microsoft\WindowsApps;C:\Users\Aazan\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Aazan\AppData\Roaming\npm
@@ -14,17 +14,12 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/netlify-lamda: Not found
-      at params.callback [as _callback] (C:\Users\Aazan\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66145:18)
-      at self.callback (C:\Users\Aazan\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140890:22)
-      at Request.emit (node:events:513:28)
-      at Request.<anonymous> (C:\Users\Aazan\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141862:10)
-      at Request.emit (node:events:513:28)
-      at IncomingMessage.<anonymous> (C:\Users\Aazan\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141784:12)
-      at Object.onceWrapper (node:events:627:28)
-      at IncomingMessage.emit (node:events:525:35)
-      at endReadableNT (node:internal/streams/readable:1359:12)
-      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+  SyntaxError: C:\Users\Aazan\OneDrive\Desktop\Portfolio\beckend\package.json: Unexpected token } in JSON at position 233
+      at JSON.parse (<anonymous>)
+      at C:\Users\Aazan\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:1629:59
+      at Generator.next (<anonymous>)
+      at step (C:\Users\Aazan\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:310:30)
+      at C:\Users\Aazan\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:321:13
 
 npm manifest: 
   {
@@ -33,12 +28,11 @@ npm manifest:
       "dotenv": "^16.3.1",
       "express": "^4.18.2",
       "mongoose": "^7.5.3",
-      "netlify-cli": "^16.4.2",
-      "serverless-http": "^3.2.0"
+      "netlify-cli": "^16.4.2"
     },
     "scripts": {
       "start": "node index.js",
-      "dev": "nodemon index.js"
+      "dev": "nodemon index.js",
     },
     "devDependencies": {
       "nodemon": "^3.0.1"
@@ -6685,11 +6679,6 @@ Lockfile:
       escape-html "~1.0.3"
       parseurl "~1.3.3"
       send "0.18.0"
-  
-  serverless-http@^3.2.0:
-    version "3.2.0"
-    resolved "https://registry.yarnpkg.com/serverless-http/-/serverless-http-3.2.0.tgz#68acc7735f7c876733c04f038ee20f31f5ebfc9b"
-    integrity sha512-QvSyZXljRLIGqwcJ4xsKJXwkZnAVkse1OajepxfjkBXV0BMvRS5R546Z4kCBI8IygDzkQY0foNPC/rnipaE9pQ==
   
   set-blocking@^2.0.0:
     version "2.0.0"
