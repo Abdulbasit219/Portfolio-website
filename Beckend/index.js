@@ -6,7 +6,7 @@ const cors = require('cors');
 
 app.use(cors(
     {
-        origin: [""],
+        origin: ["https://portfolio-website-api.vercel.app/"],
         methods: ["Get", "Post"],
         credentials: true
       }
